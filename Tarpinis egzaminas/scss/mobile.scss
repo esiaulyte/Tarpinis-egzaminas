@@ -1,0 +1,140 @@
+// image-container
+
+@media (max-width: 768px) {
+  .image-container {
+    h1 {
+      font-size: 1.2em;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      height: auto;
+
+      .email,
+      .submit {
+        height: 30px;
+        max-width: 200px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+//icons
+
+@media (max-width: 768px) {
+  #icons {
+    flex-direction: column;
+    height: 650px;
+
+    .icon1,
+    .icon2,
+    .icon3 {
+      width: 200px;
+    }
+  }
+}
+
+//home
+
+@media (max-width: 768px) {
+  .home {
+    .full-flex {
+      flex-direction: column-reverse;
+    }
+    .full-flex1 {
+      flex-direction: column;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .text-flex {
+      padding: 40px 0 30px 0;
+      width: 100%;
+
+      .text {
+        width: 75%;
+
+        p {
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+// feedback
+
+@media (max-width: 768px) {
+  #feedback-structure {
+    height: 100%;
+
+    .feedback-flex {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+
+      .feedback {
+        width: 100%;
+
+        p {
+          padding: 10px;
+        }
+
+        h4 {
+          padding-top: 10px;
+        }
+
+        &:nth-of-type(1) .img {
+          background-image: url("/content/testimonials-1.jpg");
+        }
+        &:nth-of-type(2) .img {
+          background-image: url("/content/testimonials-2.jpg");
+        }
+        &:nth-of-type(3) .img {
+          background-image: url("/content/testimonials-3.jpg");
+        }
+        .img {
+          height: 150px;
+          width: 150px;
+        }
+      }
+    }
+  }
+}
+
+//footer
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    justify-content: center;
+
+    nav {
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 5px;
+
+      a {
+        gap: 5px;
+        font-size: 0.8em;
+      }
+
+      &:not(:nth-of-type(1))::before {
+        content: "";
+        width: 3px;
+        height: 3px;
+      }
+    }
+
+    p {
+      text-align: center;
+      font-size: 0.5em;
+      padding-bottom: 20px;
+    }
+  }
+}
